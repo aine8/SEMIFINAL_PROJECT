@@ -120,7 +120,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 });
 
-    startButton.addEventListener('click', () => {
+    startButton('click', () => {
         frontPage.classList.add('hide');
         document.querySelector('.Title').classList.remove('hide');
         document.querySelector('.Display').classList.remove('hide');
@@ -129,12 +129,12 @@ window.addEventListener('DOMContentLoaded', () => {
         playerSelection.classList.remove('hide');
     });
 
-    chooseXButton.addEventListener('click', () => {
+    chooseXButton('click', () => {
         document.querySelector('.display-player').innerText = 'X';
         playerSelection.classList.add('hide');
     });
 
-    chooseOButton.addEventListener('click', () => {
+    chooseOButton('click', () => {
         document.querySelector('.display-player').innerText = 'O';
         playerSelection.classList.add('hide');
     });
