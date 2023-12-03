@@ -119,7 +119,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 });
-
+    const startButton = document.getElementById('startButton');
     startButton('click', () => {
         frontPage.classList.add('hide');
         document.querySelector('.Title').classList.remove('hide');
