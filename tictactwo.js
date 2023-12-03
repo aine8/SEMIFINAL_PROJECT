@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const box = Array.from(document.querySelectorAll('.box'));
     const displayofPlayer = document.querySelector('.display-player');
     const winnerDisplay = document.querySelector('.winner');
+    const restartButton = document.getElementById('Restart');
 
     let board = ['', '', '', '', '', '', '', '', ''];
     let currentPlayer = 'X';
@@ -129,11 +130,13 @@ window.addEventListener('DOMContentLoaded', () => {
         playerSelection.classList.remove('hide');
     });
 
+    const chooseXButton = document.getElementById('chooseXButton');
     chooseXButton('click', () => {
         document.querySelector('.display-player').innerText = 'X';
         playerSelection.classList.add('hide');
     });
 
+    const chooseOButton = document.getElementById('chooseOButton');
     chooseOButton('click', () => {
         document.querySelector('.display-player').innerText = 'O';
         playerSelection.classList.add('hide');
